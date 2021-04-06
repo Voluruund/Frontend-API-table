@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    <script src="javascript/api.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Employees</title>
+</head>
+<body>
+    <center>
+        <br>
+        <table id="color-title">
+            <th><label id="title">Manage Employees</label></th>
+            <th id="buttons">
+                <input type="submit" value="cancella" class="del-button" id="delete" onclick="deleteEmployee()">
+                Delete</input>
+                <input type="button" class="ins-button" id="btn-add" value="Add Entry"> Add entry</input>
+            </th>
+        </table>
+    <div id="entryDiv"></div>
+    <div id="newEntry">
+        <div id="color-table">
+            <table border="2" frame="hsides" id="tabella">
+                <tr>
+                    <th><label id="firstName">Name</label></th>
+                    <th><label id="lastName">Surname</label></th>
+                    <th><label id="email">Email</label></th>
+                    <th><label id="phoneNumber">Phone</label></th>
+                    <th><label id="action">Action</label></th>
+                </tr>
+                <tr>
+                    <th><input type="text" id="firstName" placeholder="First Name" required></th>
+                    <th><input type="text" id="lastName" placeholder="Last Name" required></th>
+                    <th><input type="email" id="email" placeholder="E-mail" required></th>
+                    <th><input type="text" id="phoneNumber" placeholder="Phone" required></th>
+                    <th><button class="del-button" onclick="deleteEmployee()">delete</button></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
